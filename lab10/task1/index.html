@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Задание 1</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="task-block">
+      <h2>Задание 1</h2>
+      <img
+        src="images/image1.jpg"
+        id="image1"
+        alt="Image 1"
+        onmouseover="changeImage()"
+        onmouseout="resetImage()"
+      />
+    </div>
+    <div class="task-block">
+      <h2>Задание 2</h2>
+      <img src="images/image1.jpg" id="image2" alt="Image 2" />
+      <button onclick="nextImage()">Next Image</button>
+    </div>
+    <div class="task-block">
+      <h2>Задание 3</h2>
+      <a href="#" onclick="displayText('Text 1')">Show Text 1</a>
+      <a href="#" onclick="displayText('Text 2')">Show Text 2</a>
+      <div id="textContainer"></div>
+    </div>
+    <div class="task-block">
+      <h2>Задание 4</h2>
+      <a href="#" onclick="showImage(event, 'images/image1.jpg', 100, 100)"
+        >Show Image 1</a
+      >
+      <a href="#" onclick="showImage(event, 'images/image2.jpg', 300, 200)"
+        >Show Image 2</a
+      >
+      <div id="imageContainer"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

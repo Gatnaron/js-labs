@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Car Models</title>
+  </head>
+  <body>
+    <h1>Модели автомобилей</h1>
+    <ul>
+      <li><button onclick="showImage('audi')">Audi</button></li>
+      <li><button onclick="showImage('bmw')">BMW</button></li>
+      <li><button onclick="showImage('mercedes')">Mercedes-Benz</button></li>
+    </ul>
+    <div id="imageContainer">
+      <img id="carImage" src="" alt="Car Image" />
+    </div>
+    <button onclick="goBack()">Назад</button>
+    <button onclick="goForward()">Вперед</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

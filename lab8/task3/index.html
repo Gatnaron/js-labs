@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Динамическое управление окнами</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="card">
+      <h2>Задача 2: Динамическое управление окнами</h2>
+      <p>Перейдите по следующим ссылкам, чтобы управлять окнами браузера:</p>
+      <a href="window3.html" target="_parent">Откройте окно 3 в главном окне</a
+      ><br />
+      <a href="#" onclick="openWindow4()">Откройте окно 4 в текущем окне</a>
+    </div>
+
+    <div class="card">
+      <h2>Задача 3: Сформируйте данные в новом окне</h2>
+      <form id="myForm" onsubmit="openNewWindow(); return false;">
+        <label for="data">Ввод данных:</label><br />
+        <input type="text" id="data" name="data" /><br />
+        <button type="submit">Представить</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Задача 4: Стеки гипертекстовых ссылок</h2>
+      <a href="#" onclick="openNewWindow()">Открыть новое окно</a><br />
+      <a href="#" onclick="closeCurrentWindow()">Закрыть текущее окно</a>
+    </div>
+  </body>
+</html>

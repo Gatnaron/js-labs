@@ -1,0 +1,36 @@
+.vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu a {
+  background-color: #9b0a0a;
+  padding: 8px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  display: block;
+}
+
+.vertical-menu a:hover {
+  background-color: #520404;
+}
+
+.horizontal-menu {
+  display: flex;
+}
+
+.horizontal-menu a {
+  background-color: #693cbe;
+  padding: 8px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.horizontal-menu a:hover {
+  background-color: #261564;
+}
+
+canvas {
+  border: 1px solid rgb(0, 0, 0);
+}

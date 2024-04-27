@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>lab11-task11</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form id="notificationForm">
+      <div>
+        <label for="userName">User Name:</label>
+        <input type="text" id="userName" name="userName" />
+      </div>
+      <div>
+        <label for="userEmail">User E-mail:</label>
+        <input type="email" id="userEmail" name="userEmail" />
+      </div>
+      <div>
+        <label>Отправить извещение:</label>
+        <br />
+        <input
+          type="radio"
+          id="daily"
+          name="notificationFrequency"
+          value="daily"
+        />
+        <label for="daily">Каждый день</label>
+        <br />
+        <input
+          type="radio"
+          id="weekly"
+          name="notificationFrequency"
+          value="weekly"
+        />
+        <label for="weekly">Раз в неделю</label>
+        <br />
+        <input
+          type="radio"
+          id="monthly"
+          name="notificationFrequency"
+          value="monthly"
+        />
+        <label for="monthly">Раз в месяц</label>
+      </div>
+      <div>
+        <label>Оповещать о:</label>
+        <br />
+        <input type="checkbox" id="soft" name="notificationType" value="soft" />
+        <label for="soft">Soft</label>
+        <br />
+        <input type="checkbox" id="hard" name="notificationType" value="hard" />
+        <label for="hard">Hard</label>
+      </div>
+      <div>
+        <label>Soft и Hard (несвязанные):</label>
+        <br />
+        <input
+          type="checkbox"
+          id="softUnlinked"
+          name="softUnlinked"
+          value="soft"
+        />
+        <label for="softUnlinked">Soft</label>
+        <br />
+        <input
+          type="checkbox"
+          id="hardUnlinked"
+          name="hardUnlinked"
+          value="hard"
+        />
+        <label for="hardUnlinked">Hard</label>
+      </div>
+      <div>
+        <label>Soft и Hard (связанные):</label>
+        <br />
+        <input type="checkbox" id="softLinked" name="softLinked" value="soft" />
+        <label for="softLinked">Soft</label>
+        <br />
+        <input type="checkbox" id="hardLinked" name="hardLinked" value="hard" />
+        <label for="hardLinked">Hard</label>
+      </div>
+      <button type="button" id="submitButton">OK</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

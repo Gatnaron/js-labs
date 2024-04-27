@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Timer and Marquee</title>
+    <style>
+      /* Стили для блоков-карточек */
+      .card {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>Timer в поле формы</h2>
+      <form>
+        <label for="timerInput">Таймер:</label>
+        <input type="text" id="timerInput" readonly />
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Timer на странице</h2>
+      <div id="timerContainer"></div>
+    </div>
+
+    <div class="card">
+      <h2>Бегущая строка в поле формы</h2>
+      <form>
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+          Это бегущая строка внутри формы!
+        </marquee>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

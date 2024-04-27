@@ -1,0 +1,10 @@
+body {
+  text-align: center;
+}
+.container {
+  margin-top: 50px;
+}
+#imageDisplay {
+  max-width: 300px;
+  max-height: 300px;
+}

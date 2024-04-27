@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Окно 4</title>
+    <script>
+      window.onload = function () {
+        closeAllWindows();
+      };
+
+      function closeAllWindows() {
+        window.opener.close();
+        window.close();
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Окно 4</h1>
+    <p>
+      Переход по ссылке в этом окне приведет к закрытию как этого окна, так и
+      главного окно.
+    </p>
+  </body>
+</html>

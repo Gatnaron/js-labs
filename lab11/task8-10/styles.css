@@ -1,0 +1,19 @@
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: inline-block;
+  width: 100px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons button {
+  margin-right: 10px;
+}
+.red-text {
+  color: red;
+}

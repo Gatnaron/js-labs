@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Page Generator</title>
+  </head>
+  <body>
+    <form id="pageForm">
+      <fieldset>
+        <legend>Page elements</legend>
+        <label><input type="checkbox" name="showTitle" /> Show title</label
+        ><br />
+        <label
+          ><input type="checkbox" name="showHorizontalLines" /> Show horizontal
+          lines</label
+        ><br />
+        <label><input type="checkbox" name="tableView" /> Table view</label>
+      </fieldset>
+      <fieldset>
+        <legend>Text color</legend>
+        <label
+          ><input type="radio" name="textColor" value="black" checked />
+          Black</label
+        ><br />
+        <label><input type="radio" name="textColor" value="blue" /> Blue</label
+        ><br />
+        <label><input type="radio" name="textColor" value="red" /> Red</label>
+      </fieldset>
+      <button type="button" onclick="createPage()">Create Page</button>
+      <button type="button" onclick="resetForm()">Reset</button>
+    </form>
+    <a href="../task4/index.html">task4</a>
+
+    <script src="script.js"></script>
+  </body>
+</html>

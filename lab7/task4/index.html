@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Event Handling</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      id="textField"
+      onFocus="changeText('Привет')"
+      onBlur="changeText('До свидания')"
+    />
+    <button onclick="fillTextField(this)">Нажми меня</button>
+    <input type="text" id="buttonText" />
+    <h2>Калькулятор</h2>
+    <input type="number" id="num1" />
+    <select id="operator">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+    <input type="number" id="num2" />
+    <button onclick="calculate()">Посчитать</button>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
